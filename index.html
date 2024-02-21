@@ -105,10 +105,11 @@
       <section class="mt-24 bg-[#F7F8F8]">
         <h3 class="text-4xl font-bold text-[#030712] text-center mb-6">P.H Paribahan</h3>
         <p class="text-lg font-normal text-center w-[730px] mx-auto mb-10">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined.</p>
+        <!-- route section -->
         <div class="w-[1170px] mx-auto">
           <div class="flex bg-[#FFFFFF] rounded-3xl">
             <div class="w-[800px] py-8 px-5">
-              <div class="flex justify-between">
+              <div class="flex justify-between mb-5">
                 <div class="flex gap-x-4">
                   <img src="./images/bus-logo.png" alt="">
                   <div>
@@ -123,29 +124,97 @@
                   </a>
                 </div>
               </div>  
-              <div>
+              <div class="rounded-3xl bg-[#F7F8F8] p-8 space-y-10">
                 <div class="flex justify-between">
                   <p>Route</p>
                   <p>Dhaka - Sylhet</p>
                 </div>
+                <hr class=" border border-dashed">
                 <div class="flex justify-between">
                   <p>Departure Time</p>
                   <p>9:00 PM</p>
                 </div>
-                <div class="flex justify-around">
-                  <p class="rounded-xl bg-[#0307120D] w-[230px] h-[56px]">Boarding Point - Laxmipur</p>
-                  <p class="rounded-xl bg-[#0307120D] w-[230px] h-[56px]">Dropping Point - Bogura</p>
-                  <p class="rounded-xl bg-[#0307120D] w-[230px] h-[56px]">Est. Time - 11 Hour</p>
+                <hr class="border border-dashed">
+                <div class="flex justify-around gap-5">
+                  <p class="rounded-xl bg-[#0307120D] w-[230px] h-[56px] text-center py-4">Boarding Point - Laxmipur</p>
+                  <p class="rounded-xl bg-[#0307120D] w-[230px] h-[56px] text-center py-4">Dropping Point - Bogura</p>
+                  <p class="rounded-xl bg-[#0307120D] w-[230px] h-[56px] text-center py-4">Est. Time - 11 Hour</p>
                 </div>
               </div>
             </div>
             <div>
               <img src="./images/info-devider.png" alt="">
             </div>
-            <div class="m-auto">
-              <img src="./images/fare.png" alt="">
-              <h4>550 Taka</h4>
-              <p>Per Seat</p>
+            <div class="m-auto text-center">
+              <img class="mx-auto mb-4" src="./images/fare.png" alt="">
+              <h4 class="font-bold text-3xl text-[#030712]">550 Taka</h4>
+              <p class="font-semibold text-2xl text-[#03071299]">Per Seat</p>
+            </div>
+          </div>
+        </div>
+        <!-- ticket fare -->
+        <div class="w-[1170px] mx-auto">
+          <div class="flex bg-[#FFFFFF] rounded-3xl">
+            <div class="w-[670px]">
+              <h4>Select Your Seat</h4>
+              <div class="flex">
+                <div class="flex gap-1">
+                  <img src="./images/seat-gray.png" alt="">
+                  <p>Available</p>
+                </div>
+                <div class="flex gap-1">
+                  <img src="./images/seat-green-filled.png" alt="">
+                  <p>Selected</p>
+                </div>
+              </div>
+              <div class="rounded-xl bg-[#0307121A] w-[110px] h-[56px]">
+                <img class="w-[24px]" src="./images/wheel png.png" alt="">
+              </div>
+              <div class="grid grid-cols-5 gap-x-7 gap-y-5">
+                <div>A</div>
+                <div class="seat rounded-xl bg-[#F7F8F8] w-[110px] h-[56px]">A1</div>
+                <div class="seat rounded-xl bg-[#F7F8F8] w-[110px] h-[56px]">A2</div>
+                <div class="seat rounded-xl bg-[#F7F8F8] w-[110px] h-[56px]">A3</div>
+                <div class="seat rounded-xl bg-[#F7F8F8] w-[110px] h-[56px]">A4</div>
+                <div>B</div>
+                <div class="seat rounded-xl bg-[#F7F8F8] w-[110px] h-[56px]">B1</div>
+                <div class="seat rounded-xl bg-[#F7F8F8] w-[110px] h-[56px]">B2</div>
+                <div class="seat rounded-xl bg-[#F7F8F8] w-[110px] h-[56px]">B3</div>
+                <div class="seat rounded-xl bg-[#F7F8F8] w-[110px] h-[56px]">B4</div>
+              </div>
+            </div>
+            <!-- form -->
+            <div class="w-[496px]">
+              <h4>Select Your Seat</h4>
+              <div class="flex">
+                <div>
+                  <p>Seat <span><sup>2</sup></span></p>
+                  <p>Class</p>
+                  <p>Price</p>
+                </div>
+                <div>
+                  <p>C2</p>
+                  <p>Economoy</p>
+                  <p>550</p>
+                </div>
+                <div>
+                  <p>C2</p>
+                  <p>Economoy</p>
+                  <p>550</p>
+                </div>
+                <div>
+                  <p>Total Price</p>
+                  <p>BDT 1100</p>
+                </div>
+                <div>
+                  <input type="text" placeholder="Have any copupon?" class="input w-full max-w-xs rounded-xl bg-[#FFFFFF]" />
+                </div>
+                <div>
+                  <p>Grand Total</p>
+                  <p>BDT 1100</p>
+                </div>
+              </div>
+              <button class="btn btn-wide bg-[#1DD100]">Next</button>
             </div>
           </div>
         </div>
