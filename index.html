@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body class="font-raleway font-inter">
-    <header class="container mx-auto">
+    <header class="container mx-auto w-[1170px]">
         <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
@@ -45,7 +45,7 @@
         </nav>
         <!-- banner section -->
         <div class="mt-8">
-          <div class="hero min-h-screen rounded-3xl" style="background-image: url('./images/banner.png');">
+          <div class="hero h-[550px] max-w rounded-3xl" style="background-image: url('./images/banner.png');">
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="max-w-[740px]">
@@ -58,12 +58,14 @@
         </div>
 
     </header>
-    <main>
-      <section>
-        <h3 class="text-4xl font-bold text-[#030712]">Best offers for you</h3>
+    <main class="container mx-auto">
+
+      <!-- offers section -->
+      <section class="mt-24">
+        <h3 class="text-4xl font-bold text-[#030712] text-center mb-10">Best offers for you</h3>
         <div class="flex justify-center gap-x-6">
           <div>
-            <div class="card card-side bg-[#FFBF0F] shadow-xl">
+            <div class="card card-side bg-[#FFBF0F] shadow-xl w-[573px]">
               <div class="card-body m-auto">
                 <h2 class="card-title">15% OFF</h2>
                 <p>on your next purchase</p>
@@ -79,7 +81,7 @@
             </div>
           </div>
           <div>
-            <div class="card card-side bg-[#FFBF0F] shadow-xl">
+            <div class="card card-side bg-[#F78C9C] shadow-xl w-[573px]">
               <div class="card-body m-auto">
                 <h2 class="card-title">15% OFF</h2>
                 <p>on your next purchase</p>
@@ -89,12 +91,19 @@
                 <img src="./images/cupon-devider.png" alt="">
               </div>
               <div class="m-auto">
-                <h2 class="card-title">NEW15</h2>
+                <h2 class="card-title text-3xl font-bold">Couple 20</h2>
                 <p>Coupon Code</p>
               </div>
             </div>
           </div>
         </div>
+        <div class="text-center">
+          <button class="btn border rounded-xl border-[#1DD100] text-[#1DD100] mt-24 justify-items-center">See All Offers</button>
+        </div>
+      </section>
+      <!-- ticket section -->
+      <section>
+        
       </section>
 
     </main>
