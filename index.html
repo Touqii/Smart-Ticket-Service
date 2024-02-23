@@ -51,7 +51,9 @@
               <div class="max-w-[740px]">
                 <h1 class="mb-5 text-6xl font-extrabold">End-to-End Travel with <span class="font-extrabold text-6xl text-[#1DD100]">P Paribahan</span> </h1>
                 <p class="mb-5 text-lg font-normal">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-                <button class="btn btn-primary bg-[#1DD100] text-[#030712]">Buy Tickets</button>
+                <a href="#ticket-fare">
+                  <button class="btn btn-primary bg-[#1DD100] text-[#030712]">Buy Tickets</button>
+                </a>
               </div>
             </div>
           </div>
@@ -102,7 +104,7 @@
         </div>
       </section>
       <!-- ticket section -->
-      <section class="mt-24 bg-[#F7F8F8] border-t-2 border-[#1DD100] rounded-[88px]">
+      <section id="Paribahan" class="mt-24 bg-[#F7F8F8] border-t-2 border-[#1DD100] rounded-[88px]">
         <h3 class="text-4xl font-bold text-[#030712] text-center mb-6 pt-20">P.H Paribahan</h3>
         <p class="text-lg font-normal text-center w-[730px] mx-auto mb-10">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined.</p>
         <!-- route section -->
@@ -153,7 +155,7 @@
           </div>
         </div>
         <!-- ticket fare -->
-        <div class="w-[1170px] mx-auto">
+        <div id="ticket-fare" class="w-[1170px] mx-auto">
           <div class="flex bg-[#FFFFFF] rounded-3xl">
             <div class="w-[670px] p-8">
               <h4 class="mb-6 font-semibold text-2xl text-[#030712]">Select Your Seat</h4>
@@ -195,7 +197,7 @@
               <hr class="mb-6 border border-dashed">
               <div class="p-8 w-[433px] rounded-xl bg-[#F7F8F8] space-y-4">
                 <div class="flex justify-between">
-                  <p>Seat <span> <sup class="rounded bg-[#1DD100] text-[#FFFFFF] text-center">2</sup> </span></p>
+                  <p>Seat <button class="btn btn-xs bg-[#1DD100]"> <span>2</span> </button></p>
                   <p>Class</p>
                   <p>Price</p>
                 </div>
@@ -215,8 +217,9 @@
                   <p>Total Price</p>
                   <p>BDT 1100</p>
                 </div>
-                <div>
-                  <input type="text" placeholder="Have any coupon?" class="input w-full max-w-xs rounded-xl bg-[#FFFFFF]" />
+                <div class="flex">
+                    <input type="text" placeholder="Have any coupon?" class="input w-full max-w-xs rounded-xl bg-[#FFFFFF]" />
+                    <button class="btn bg-[#1DD100]">Button</button>
                 </div>
                 <div class="flex justify-between">
                   <p>Grand Total</p>
