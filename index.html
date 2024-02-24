@@ -122,7 +122,7 @@
                 <div>
                   <a class="btn bg-[#1DD1001A]">
                     <img src="./images/seat-green.png" alt="">
-                    <p class="font-medium text-lg text-[#1DD100]"> <span>8</span> Seats left</p>
+                    <p class="font-medium text-lg text-[#1DD100]"> <span id="left-count">8</span> Seats left</p>
                   </a>
                 </div>
               </div>  
@@ -178,16 +178,16 @@
               </div>
               <div class="flex justify-between gap-x-12">
                 <div class="grid grid-cols-2 gap-6">
-                  <button onclick="changeColor(this)" id="A1" class="seat btn rounded-xl bg-[#F7F8F8] w-[110px] h-[56px] text-center p-4">A1</button>
-                  <button onclick="changeColor(this)" id="A2" class="seat btn rounded-xl bg-[#F7F8F8] w-[110px] h-[56px] text-center p-4">A2</button>
-                  <button onclick="changeColor(this)" id="B1" class="seat btn rounded-xl bg-[#F7F8F8] w-[110px] h-[56px] text-center p-4">B1</button>
-                  <button onclick="changeColor(this)" id="B2" class="seat btn rounded-xl bg-[#F7F8F8] w-[110px] h-[56px] text-center p-4">B2</button>
+                  <button class="add-seat btn rounded-xl bg-[#F7F8F8] w-[110px] h-[56px] text-center p-4">A1</button>
+                  <button class="add-seat btn rounded-xl bg-[#F7F8F8] w-[110px] h-[56px] text-center p-4">A2</button>
+                  <button class="add-seat btn rounded-xl bg-[#F7F8F8] w-[110px] h-[56px] text-center p-4">B1</button>
+                  <button class="add-seat btn rounded-xl bg-[#F7F8F8] w-[110px] h-[56px] text-center p-4">B2</button>
                 </div>
                 <div class="grid grid-cols-2 gap-6">
-                  <button onclick="changeColor(this)" id="A3" class="seat btn rounded-xl bg-[#F7F8F8] w-[110px] h-[56px] text-center p-4">A3</button>
-                  <button onclick="changeColor(this)" id="A4" class="seat btn rounded-xl bg-[#F7F8F8] w-[110px] h-[56px] text-center p-4">A4</button>
-                  <button onclick="changeColor(this)" id="B3" class="seat btn rounded-xl bg-[#F7F8F8] w-[110px] h-[56px] text-center p-4">B3</button>
-                  <button onclick="changeColor(this)" id="B4" class="seat btn rounded-xl bg-[#F7F8F8] w-[110px] h-[56px] text-center p-4">B4</button>
+                  <button class="add-seat btn rounded-xl bg-[#F7F8F8] w-[110px] h-[56px] text-center p-4">A3</button>
+                  <button class="add-seat btn rounded-xl bg-[#F7F8F8] w-[110px] h-[56px] text-center p-4">A4</button>
+                  <button class="add-seat btn rounded-xl bg-[#F7F8F8] w-[110px] h-[56px] text-center p-4">B3</button>
+                  <button class="add-seat btn rounded-xl bg-[#F7F8F8] w-[110px] h-[56px] text-center p-4">B4</button>
                 </div>
               </div>
             </div>
@@ -197,12 +197,12 @@
               <hr class="mb-6 border border-dashed">
               <div class="p-8 w-[433px] rounded-xl bg-[#F7F8F8] space-y-4">
                 <div class="flex justify-between">
-                  <p>Seat <button class="btn btn-xs bg-[#1DD100]"> <span>2</span> </button></p>
+                  <p>Seat <button class="btn btn-xs bg-[#1DD100]"> <span id="seat-count">2</span> </button></p>
                   <p>Class</p>
                   <p>Price</p>
                 </div>
                 <hr>
-                <div class="flex justify-between">
+                <!-- <div class="flex justify-between">
                   <p>C2</p>
                   <p>Economoy</p>
                   <p>550</p>
@@ -211,19 +211,20 @@
                   <p>C2</p>
                   <p>Economoy</p>
                   <p>550</p>
-                </div>
+                </div> -->
+                <div id="selected-seat-container"></div>
                 <hr>
                 <div class="flex justify-between">
                   <p>Total Price</p>
-                  <p>BDT 1100</p>
+                  <p>BDT <span id="total-price" class="font-semibold">0</span></p>
                 </div>
                 <div class="flex">
-                    <input type="text" placeholder="Have any coupon?" class="input w-full max-w-xs rounded-xl bg-[#FFFFFF]" />
-                    <button class="btn bg-[#1DD100]">Button</button>
+                    <input id="coupon-code" type="text" placeholder="Have any coupon?" class="input w-full max-w-xs rounded-xl bg-[#FFFFFF]" />
+                    <button onclick="updateGrandTotal('applied')" class="btn bg-[#1DD100]">Button</button>
                 </div>
                 <div class="flex justify-between">
                   <p>Grand Total</p>
-                  <p>BDT 1100</p>
+                  <p>BDT <span id="grand-total" class="font-semibold">0</span></p>
                 </div>
               </div>
               <button class="btn btn-wide bg-[#1DD100] mt-5 w-[433px]">Next</button>
