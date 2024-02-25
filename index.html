@@ -197,7 +197,7 @@
               <hr class="mb-6 border border-dashed">
               <div class="p-8 w-[433px] rounded-xl bg-[#F7F8F8] space-y-4">
                 <div class="flex justify-between">
-                  <p>Seat <button class="btn btn-xs bg-[#1DD100]"> <span id="seat-count">2</span> </button></p>
+                  <p>Seat <button class="btn btn-xs bg-[#1DD100]"> <span id="seat-count">0</span> </button></p>
                   <p>Class</p>
                   <p>Price</p>
                 </div>
@@ -227,7 +227,20 @@
                   <p>BDT <span id="grand-total" class="font-semibold">0</span></p>
                 </div>
               </div>
-              <button class="btn btn-wide bg-[#1DD100] mt-5 w-[433px]">Next</button>
+              <!-- Open the modal using ID.showModal() method -->
+<button class="btn btn-wide bg-[#1DD100] mt-5 w-[433px]" onclick="my_modal_1.showModal()">Next</button>
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+    <h3 class="font-bold text-lg">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
             </div>
           </div>
         </div>

@@ -7,6 +7,28 @@ for(const clickedSeat of allSeat){
         const seatName = event.target.innerText;
         const selectedContainer = document.getElementById("selected-seat-container");
 
+        event.target.setAttribute("disabled", false);
+
+         // limitation of seat count ;
+
+         if (getConvertedValue("seat-count")+1>4){
+            alert("tumi boisa thako");
+            return;
+         }
+
+        // update seat count ;
+
+        const seatCount = getConvertedValue("seat-count");
+        document.getElementById('seat-count').innerText = seatCount + 1;
+
+        // update seat left;
+        const leftCount = getConvertedValue("left-count");
+        document.getElementById('left-count').innerText = leftCount - 1;
+
+    
+
+
+
         const div = document.createElement("div");
         div.classList.add("flex");
         div.classList.add("justify-between");
@@ -71,3 +93,4 @@ function updateGrandTotal(check){
         }
     }
 }
+
