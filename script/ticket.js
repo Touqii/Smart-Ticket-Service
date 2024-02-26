@@ -87,6 +87,9 @@ function updateGrandTotal(check){
         if (couponCode == "NEW15") {
             const discount = totalPrice * 0.15;
             document.getElementById("grand-total").innerText = totalPrice - discount;
+        } else if (couponCode == "Couple 20") {
+            const discount = totalPrice * 0.20;
+            document.getElementById("grand-total").innerText = totalPrice - discount;
         }
         else {
             alert('please enter a valid coupon code');
